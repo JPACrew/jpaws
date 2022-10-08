@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <p id="nameLabel" th:text="${message}"></p>
+  <input type="text" id="name"/>
+  <input type="number" id="age">
+  <button id="changeBtn" th:onclick="sayHello()">change</button>
+  <script type="text/javascript" th:src="@{/hello.js}"></script>
+</body>
+</html>
